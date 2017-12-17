@@ -48,6 +48,9 @@
     <Compile Include="api\AdventInput.cs" />
     <Compile Include="api\InputSeparator.cs" />
     <Compile Include="days\solutions\day1.cs" />
+    <Compile Include="days\solutions\day2.cs" />
+    <Compile Include="days\solutions\day3.cs" />
+    <Compile Include="days\solutions\Day4.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="util\AdventUtil.cs" />

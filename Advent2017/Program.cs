@@ -10,9 +10,7 @@ namespace Advent2017
 	{
 		static void Main(string[] args)
 		{
-			new days.solutions.day1();
-
-			Console.ReadLine();
+			new days.solutions.Day4();
 		}
 	}
 }

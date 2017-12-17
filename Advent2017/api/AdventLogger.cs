@@ -17,9 +17,9 @@ namespace Advent2017.api
 			Part = part;
 		}
 
-		public void Print(string text, bool line = true)
+		public void Print(string text, bool line = true, bool withFormat = true)
 		{
-			string format = String.Format("[{0}.{1}] {2}", Day, Part, text);
+			string format = (withFormat) ? String.Format("[{0}.{1}] {2}", Day, Part, text) : text;
 
 			if (line)
 			{
@@ -30,7 +30,7 @@ namespace Advent2017.api
 			}
 		}
 
-		private void PrintColored(string text, ConsoleColor color, bool line = false)
+		private void PrintColored(string text, ConsoleColor color, bool line = false, bool withFormat = true)
 		{
 			ConsoleColor priorColor = Console.ForegroundColor;
 
@@ -45,7 +45,7 @@ namespace Advent2017.api
 		{
 			PrintColored("DEBUG: ", ConsoleColor.Yellow);
 
-			Print(text);
+			Print(text, withFormat: false);
 		}
 
 
@@ -53,14 +53,14 @@ namespace Advent2017.api
 		{
 			PrintColored("INFO: ", ConsoleColor.Green);
 
-			Print(text);
+			Print(text, withFormat: false);
 		}
 
 		public void Solution(string text)
 		{
 			PrintColored("SOLUTION: ", ConsoleColor.Magenta);
 
-			Print(text);
+			Print(text, withFormat: false);
 		}
 	}
 }

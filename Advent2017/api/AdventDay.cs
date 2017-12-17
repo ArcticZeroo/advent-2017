@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Advent2017.util;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,19 +15,28 @@ namespace Advent2017.api
 		protected AdventLogger Logger;
 		protected AdventInput Input;
 
-		public AdventDay(int day, int part, InputSeparator separator)
+		public AdventDay(int day, int part, InputSeparator? separator = null)
 		{
 			Day = day;
 			Part = part;
-			Separator = separator;
 			Logger = new AdventLogger(day, part);
 
+			if (separator != null)
+			{
+				Separator = separator.GetValueOrDefault();
+				Input = AdventUtil.getInput(day, part, separator.GetValueOrDefault());
+			}
+		}
+
+		protected void Start()
+		{
 			Logger.Info("Begin Solution");
 
-			if (part == 1)
+			if (Part == 1)
 			{
 				Part1();
-			} else if (part == 2)
+			}
+			else if (Part == 2)
 			{
 				Part2();
 			}
