@@ -19,40 +19,19 @@ namespace Advent2017.days.solutions
 		{
 			string[] chunks = input.Split(' ');
 
-			List<string> uniqueChunks = new List<string>();
-
-			foreach (string chunk in chunks)
-			{
-				if (uniqueChunks.Contains(chunk))
-				{
-					return false;
-				}
-
-				uniqueChunks.Add(chunk);
-			}
-
-			return true;
+			return chunks.Distinct().ToArray().Length == chunks.Length;
 		}
 
 		bool IsValidAnagramPassphrase(string input)
 		{
 			string[] chunks = input.Split(' ');
 
-			List<string> uniqueChunks = new List<string>();
+			//foreach (string chunk in chunks.Select(s => String.Concat(s.OrderBy(c => c)).ToArray())) 
+			//{
 
-			foreach (string chunk in chunks)
-			{
-				string sortedChunk = String.Concat(chunk.OrderBy(s => s));
+			//}
 
-				if (uniqueChunks.Contains(sortedChunk))
-				{
-					return false;
-				}
-
-				uniqueChunks.Add(sortedChunk);
-			}
-
-			return true;
+			return chunks.Select(s => s.OrderBy(c => c)).Distinct().ToArray().Length == chunks.Length;
 		}
 			 
 		protected override void Part1()
