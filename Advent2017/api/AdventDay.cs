@@ -24,7 +24,7 @@ namespace Advent2017.api
 			if (separator != null)
 			{
 				Separator = separator.GetValueOrDefault();
-				Input = AdventUtil.getInput(day, part, separator.GetValueOrDefault());
+				Input = AdventUtil.getInput(day, 1, separator.GetValueOrDefault());
 			}
 		}
 
