@@ -51,6 +51,8 @@
     <Compile Include="days\solutions\day2.cs" />
     <Compile Include="days\solutions\day3.cs" />
     <Compile Include="days\solutions\Day4.cs" />
+    <Compile Include="days\solutions\Day5.cs" />
+    <Compile Include="days\solutions\Day6.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="util\AdventUtil.cs" />

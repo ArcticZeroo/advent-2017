@@ -43,7 +43,7 @@ namespace Advent2017.api
 
 			Logger.Info("End Solution");
 
-			Console.ReadKey();
+			Console.ReadLine();
 		}
 
 		protected abstract void Part1();
