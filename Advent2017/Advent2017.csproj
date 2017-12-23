@@ -53,6 +53,8 @@
     <Compile Include="days\solutions\Day4.cs" />
     <Compile Include="days\solutions\Day5.cs" />
     <Compile Include="days\solutions\Day6.cs" />
+    <Compile Include="days\solutions\Day7.cs" />
+    <Compile Include="days\solutions\Day8.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="util\AdventUtil.cs" />
@@ -61,8 +63,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="days\inputs\" />
+    <Content Include="days\inputs\7.1.txt" />
+    <Content Include="days\inputs\8.1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
