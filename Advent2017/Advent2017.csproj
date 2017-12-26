@@ -47,6 +47,9 @@
     <Compile Include="api\AdventLogger.cs" />
     <Compile Include="api\AdventInput.cs" />
     <Compile Include="api\InputSeparator.cs" />
+    <Compile Include="days\solutions\Day10.cs" />
+    <Compile Include="days\solutions\Day11.cs" />
+    <Compile Include="days\solutions\Day9.cs" />
     <Compile Include="days\solutions\day1.cs" />
     <Compile Include="days\solutions\day2.cs" />
     <Compile Include="days\solutions\day3.cs" />
@@ -65,8 +68,11 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="days\inputs\10.1.txt" />
+    <Content Include="days\inputs\11.1.txt" />
     <Content Include="days\inputs\7.1.txt" />
     <Content Include="days\inputs\8.1.txt" />
+    <Content Include="days\inputs\9.1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

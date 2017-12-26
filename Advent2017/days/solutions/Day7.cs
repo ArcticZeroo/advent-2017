@@ -28,7 +28,7 @@ namespace Advent2017.days.solutions
 
 		public Item(string name, int weight) : this(name, weight, new List<string>(), null) { }
 
-		public string ToString()
+		public override string ToString()
 		{
 			return String.Format("Item[name: {0}, weight: {1}, childrenCount: {2}, parentExists: {3}]", Name, Weight, Children.Count, Parent != null);
 		}
